@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkslategrey;
+}
+.container {
+  width: 100vw;
+
+  padding: 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menuCard {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5%;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.menuCard img {
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px black;
+  margin: 0.5rem 0;
+  cursor: zoom-in;
+  transition: transform 0.7s;
+}
+
+.menuCard:hover img {
+  transform: scale(1.5) rotateX(45deg); /* Apply scale and rotation on hover */
+  box-shadow: 4px 4px 4px black; /* Adjust box-shadow on hover */
+}
+
+.menuCard:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.menuCard:hover .name {
+  transform: scale(1.1);
+  text-shadow: 1px 1px 2px black;
+}
+.menuContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name {
+  font-size: 1.2rem;
+  color: ghostwhite;
+}
+
+.createMenu {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.createMenu input {
+  margin: 0.5rem;
+  height: 2rem;
+}
+
+button {
+  width: 200px;
+  height: 30px;
+}
